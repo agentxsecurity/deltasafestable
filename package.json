@@ -8,8 +8,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "build": "npx expo export --platform web",
-    "vercel-build": "npx expo export --platform web"
+    "build": "echo 'Using pre-built static files'",
+    "vercel-build": "echo 'Using pre-built static files'"
   },
   "dependencies": {
     "expo": "~49.0.0",

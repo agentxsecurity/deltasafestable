@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "buildCommand": "npx expo export --platform web",
-  "outputDirectory": "dist",
-  "installCommand": "npm install",
-  "devCommand": "expo start --web",
-  "framework": null,
-  "rewrites": [
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "dist/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dist/$1"
     }
   ]
 }
